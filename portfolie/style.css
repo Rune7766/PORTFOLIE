@@ -30,7 +30,6 @@ img {
     height: auto;
 }
 
-
 /*navigation*/
 
 /*BURGER MENU*/
@@ -44,20 +43,34 @@ img {
 #menuknap {
     display: inline-block;
     color: #ffa500;
-    font-size: 22px;
+    font-size: 32px;
     float: right;
+
 }
 
 #menu {
     list-style-type: none;
     transition: transform .3s;
     transform-origin: top left;
-    background-color: #171717;
-    text-align: center;
+    background-color: #242424;
     font-size: 20px;
-    padding: opx;
+    padding: 0px;
     margin: 0px;
+    text-align: left;
+
 }
+
+#farve1 {
+    background-color: #3f3e3e;
+}
+
+#menu a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Lato', sans-sef;
+    margin-left: 10px;
+}
+
 
 #menu a:hover {
     color: #ffa500;
@@ -118,15 +131,15 @@ img {
     }
 }
 
-.citat {
-    display: block;
+#citat {
+    justify-content: center;
 
 }
 
 /*animation af tekst*/
 
 
-.designanimate {
+#designanimate {
     padding-top: 300px;
     padding-bottom: 300px;
     -webkit-animation: designanimate 2000ms 0.5s both;
@@ -296,7 +309,6 @@ img {
     display: flex;
     flex-direction: column;
     margin: 0 auto;
-    margin-top: 30px;
     margin-bottom: 30px;
     max-width: 1200px;
     border-radius: 10px;
@@ -306,7 +318,7 @@ img {
 
 .beskrivelse {
     text-align: justify;
-    margin: 60px;
+    margin: 20px;
     color: white
 }
 
@@ -344,9 +356,8 @@ img {
 }
 
 .matriale {
-
-    flex-basis: 900px;
-    padding: 30px;
+    margin: 20px;
+    justify-content: center;
 
 }
 
@@ -357,6 +368,17 @@ img {
     margin-top: 20px;
 }
 
+video {
+    border: 2px solid #ffa500;
+    margin: 20px;
+}
+
+.video {
+    display: flex;
+    position: relative;
+    justify-content: center;
+
+}
 
 /*fOOTER*/
 #footer {
