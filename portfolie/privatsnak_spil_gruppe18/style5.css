@@ -1,0 +1,622 @@
+@font-face {
+    font-family: 'chalk';
+    src: url('fonts/djb_chalk_it_up-webfont.woff2') format('woff2'),
+        url('fonts/djb_chalk_it_up-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+html {
+    font-size: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+#screen {
+    width: 100vw;
+    height: 56.25vw;
+    position: relative;
+}
+
+#game {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+/* BAGGRUND */
+
+#game_background {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-image: url(assets/game_screen.svg);
+    background-size: 100%;
+}
+
+#ps_logo {
+    width: 30vw;
+    height: 21.75vw;
+    position: absolute;
+    background-image: url(assets/logo-privatsnak.png);
+    background-size: 100%;
+    top: 10vw;
+    left: 53vw;
+}
+
+/* DEL OG SLET KNAP */
+
+#delete_button {
+    position: absolute;
+    background-image: url(assets/slet_knap.svg);
+    background-size: 100%;
+    width: 3vw;
+    height: 4.5vw;
+    top: 35vw;
+    left: 33.6vw;
+    cursor: pointer;
+}
+
+#share_button {
+    position: absolute;
+    background-image: url(assets/del_knap.svg);
+    background-size: 100%;
+    width: 3vw;
+    height: 4.5vw;
+    top: 35vw;
+    left: 18vw;
+    cursor: pointer;
+}
+
+/* BILLEDER */
+.billede_beskrivelse {
+    position: absolute;
+    font-family: futura;
+    color: white;
+    font-size: 2vw;
+    margin: 0;
+    top: 5vw;
+    left: 3vw;
+    width: 90%;
+}
+
+
+#billede_1_container {
+    position: absolute;
+    background-image: url(assets/scenarie-1.svg);
+    background-size: 100%;
+    width: 4.6vw;
+    height: 4.6vw;
+    top: 24.9vw;
+    left: 17.15vw;
+}
+
+
+#billede_1_sprite {
+    position: absolute;
+    left: 29vw;
+    top: 3vw;
+    width: 50vw;
+    height: 28.712406015037594vw;
+    position: absolute;
+    background-image: url(assets/talebobbel.svg);
+    background-size: 100%;
+}
+
+#billede_2_container {
+    position: absolute;
+    background-image: url(assets/scenarie-2.svg);
+    background-size: 100%;
+    width: 4.6vw;
+    height: 4.6vw;
+    top: 14.7vw;
+    left: 22.29vw;
+}
+
+#billede_2_sprite {
+    position: absolute;
+    left: 30vw;
+    top: 3vw;
+    width: 50vw;
+    height: 28.712406015037594vw;
+    position: absolute;
+    background-image: url(assets/talebobbel.svg);
+    background-size: 100%;
+}
+
+
+#billede_3_container {
+    position: absolute;
+    background-image: url(assets/scenarie_3.svg);
+    background-size: 100%;
+    width: 4.6vw;
+    height: 4.6vw;
+    top: 24.9vw;
+    left: 27.43vw;
+}
+
+#billede_3_sprite {
+    position: absolute;
+    left: 30vw;
+    top: 3vw;
+    width: 50vw;
+    height: 28.712406015037594vw;
+    position: absolute;
+    background-image: url(assets/talebobbel.svg);
+    background-size: 100%;
+}
+
+#billede_4_container {
+    position: absolute;
+    background-image: url(assets/scenarie-4.svg);
+    background-size: 100%;
+    width: 4.6vw;
+    height: 4.6vw;
+    top: 4.7vw;
+    left: 32.5vw;
+}
+
+#billede_4_sprite {
+    position: absolute;
+    left: 30vw;
+    top: 3vw;
+    width: 50vw;
+    height: 28.712406015037594vw;
+    position: absolute;
+    background-image: url(assets/talebobbel.svg);
+    background-size: 100%;
+}
+
+/* KONSEKVENSER */
+#kons_del_1 {
+    position: absolute;
+    background-image: url(assets/kons_del_1.svg);
+    background-size: 100%;
+    width: 100%;
+    height: 100%;
+}
+
+#kons_del_2 {
+    position: absolute;
+    background-image: url(assets/kons_del_2.svg);
+    background-size: 100%;
+    width: 100%;
+    height: 100%;
+}
+
+#kons_del_3 {
+    position: absolute;
+    background-image: url(assets/kons_del_3.svg);
+    background-size: 100%;
+    width: 100%;
+    height: 100%;
+}
+
+#kons_del_4 {
+    position: absolute;
+    background-image: url(assets/kons_del_4.svg);
+    background-size: 100%;
+    width: 100%;
+    height: 100%;
+}
+
+#kons_slet_1 {
+    position: absolute;
+    background-image: url(assets/kons_slet_1.svg);
+    background-size: 100%;
+    width: 100%;
+    height: 100%;
+}
+
+#kons_slet_2 {
+    position: absolute;
+    background-image: url(assets/kons_slet_2.svg);
+    background-size: 100%;
+    width: 100%;
+    height: 100%;
+}
+
+#kons_slet_3 {
+    position: absolute;
+    background-image: url(assets/kons_slet_3.svg);
+    background-size: 100%;
+    width: 100%;
+    height: 100%;
+}
+
+#kons_slet_4 {
+    position: absolute;
+    background-image: url(assets/kons_slet_4.svg);
+    background-size: 100%;
+    width: 100%;
+    height: 100%;
+}
+
+#kon_arrow1 {
+    position: absolute;
+    background-image: url(assets/kon_arrow.svg);
+    background-size: 100%;
+    width: 5vw;
+    height: 3vw;
+    top: 39vw;
+    left: 73vw;
+    cursor: pointer;
+}
+
+#kon_arrow2 {
+    position: absolute;
+    background-image: url(assets/kon_arrow.svg);
+    background-size: 100%;
+    width: 5vw;
+    height: 3vw;
+    top: 39vw;
+    left: 73vw;
+    cursor: pointer;
+}
+
+#kon_arrow3 {
+    position: absolute;
+    background-image: url(assets/kon_arrow.svg);
+    background-size: 100%;
+    width: 5vw;
+    height: 3vw;
+    top: 39vw;
+    left: 73vw;
+    cursor: pointer;
+}
+
+#kon_arrow4 {
+    position: absolute;
+    background-image: url(assets/kon_arrow.svg);
+    background-size: 100%;
+    width: 5vw;
+    height: 3vw;
+    top: 39vw;
+    left: 73vw;
+    cursor: pointer;
+}
+
+#kon_arrow5 {
+    position: absolute;
+    background-image: url(assets/kon_arrow.svg);
+    background-size: 100%;
+    width: 5vw;
+    height: 3vw;
+    top: 39vw;
+    left: 73vw;
+    cursor: pointer;
+}
+
+#kon_arrow6 {
+    position: absolute;
+    background-image: url(assets/kon_arrow.svg);
+    background-size: 100%;
+    width: 5vw;
+    height: 3vw;
+    top: 39vw;
+    left: 73vw;
+    cursor: pointer;
+}
+
+#kon_arrow7 {
+    position: absolute;
+    background-image: url(assets/kon_arrow.svg);
+    background-size: 100%;
+    width: 5vw;
+    height: 3vw;
+    top: 39vw;
+    left: 73vw;
+    cursor: pointer;
+}
+
+#kon_arrow8 {
+    position: absolute;
+    background-image: url(assets/kon_arrow.svg);
+    background-size: 100%;
+    width: 5vw;
+    height: 3vw;
+    top: 39vw;
+    left: 73vw;
+    cursor: pointer;
+}
+
+
+/* GAME OVER OG LEVEL COMPLETE */
+
+#gameover {
+    width: 100vw;
+    height: 56.25vw;
+    position: absolute;
+    background-image: url(assets/gameover.svg);
+    background-size: 100%;
+    top: 0;
+}
+
+#levelcomplete {
+    width: 100vw;
+    height: 56.25vw;
+    position: absolute;
+    background-image: url(assets/levelcomplete.svg);
+    background-size: 100%;
+    top: 0;
+}
+
+#restart_knap {
+    position: absolute;
+    background-image: url(assets/restart.svg);
+    background-size: 100%;
+    width: 20vw;
+    height: 6.766169154228855vw;
+    top: 41vw;
+    left: 40vw;
+    cursor: pointer;
+}
+
+#restart_knap1 {
+    position: absolute;
+    background-image: url(assets/restart.svg);
+    background-size: 100%;
+    width: 20vw;
+    height: 6.766169154228855vw;
+    top: 41vw;
+    left: 40vw;
+    cursor: pointer;
+}
+
+#privat_snak_logo1 {
+    position: absolute;
+    background-image: url(assets/logo-privatsnak.png);
+    background-size: 100%;
+    width: 20vw;
+    height: 14.496124031007753vw;
+    top: 37vw;
+    left: 4vw;
+}
+
+#privat_snak_logo {
+    position: absolute;
+    background-image: url(assets/logo-privatsnak.png);
+    background-size: 100%;
+    width: 20vw;
+    height: 14.496124031007753vw;
+    top: 37vw;
+    left: 4vw;
+}
+
+#sex_samfund_logo1 {
+    position: absolute;
+    background-image: url(assets/sogslogo.png);
+    background-size: 100%;
+    width: 10vw;
+    height: 20.075757575757574vw;
+    top: 33vw;
+    right: 4vw;
+}
+
+#sex_samfund_logo {
+    position: absolute;
+    background-image: url(assets/sogslogo.png);
+    background-size: 100%;
+    width: 10vw;
+    height: 20.075757575757574vw;
+    top: 33vw;
+    right: 4vw;
+}
+
+#start_screen {
+    width: 100vw;
+    height: 56.25vw;
+    position: absolute;
+    background-image: url(assets/startskaerm.svg);
+    background-size: 100%;
+    top: 0;
+}
+
+#play_knap {
+    position: absolute;
+    background-image: url(assets/start_knap.svg);
+    background-size: 100%;
+    width: 20vw;
+    height: 6.817042606516291vw;
+    top: 33vw;
+    right: 22vw;
+    cursor: pointer;
+}
+
+
+/* ANIMATIONER */
+
+.blur {
+    animation-name: blur_kf;
+    animation-delay: 0.5s;
+    animation-duration: 0.2s;
+    animation-fill-mode: both;
+    animation-iteration-count: 1;
+}
+
+@keyframes blur_kf {
+    0% {
+        -webkit-filter: blur(0px);
+        -moz-filter: blur(0px);
+        -o-filter: blur(0px);
+        -ms-filter: blur(0px);
+        filter: blur(0px);
+    }
+
+    100% {
+        -webkit-filter: blur(5px);
+        -moz-filter: blur(5px);
+        -o-filter: blur(5px);
+        -ms-filter: blur(5px);
+        filter: blur(5px);
+    }
+}
+
+.blur_reverse {
+    animation-name: blur_reverse_kf;
+
+    animation-duration: 0.2s;
+    animation-direction: reverse;
+    animation-fill-mode: both;
+    animation-iteration-count: 1;
+}
+
+@keyframes blur_reverse_kf {
+    0% {
+        -webkit-filter: blur(0px);
+        -moz-filter: blur(0px);
+        -o-filter: blur(0px);
+        -ms-filter: blur(0px);
+        filter: blur(0px);
+    }
+
+    100% {
+        -webkit-filter: blur(5px);
+        -moz-filter: blur(5px);
+        -o-filter: blur(5px);
+        -ms-filter: blur(5px);
+        filter: blur(5px);
+    }
+}
+
+.konsekvens_popup {
+    animation-name: kons_kf;
+    animation-delay: 0.5s;
+    animation-duration: 0.2s;
+    animation-fill-mode: both;
+    animation-iteration-count: 1;
+    /*    animation-timing-function: linear;*/
+}
+
+@keyframes kons_kf {
+    0% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+
+}
+
+.konsekvens_popup_reverse {
+    animation-name: kons_reverse_kf;
+
+    animation-duration: 0.2s;
+    animation-direction: reverse;
+    animation-fill-mode: both;
+    animation-iteration-count: 1;
+    /*    animation-timing-function: linear;*/
+}
+
+@keyframes kons_reverse_kf {
+    0% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+
+}
+
+.enlarge {
+    animation-name: enlarge_kf;
+    animation-duration: 0s;
+    animation-fill-mode: both;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+}
+
+@keyframes enlarge_kf {
+    0% {
+        width: 4.6vw;
+        height: 4.6vw;
+    }
+
+    100% {
+        width: 21.3vw;
+        height: 30.6vw;
+        top: 4.1vw;
+        left: 16.5vw;
+    }
+}
+
+.delete {
+    animation-name: delete_kf;
+    animation-duration: 0.5s;
+    animation-fill-mode: both;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+}
+
+@keyframes delete_kf {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+        width: 21.3vw;
+        height: 30vw;
+        top: 4.1vw;
+        left: 16.5vw;
+    }
+
+    100% {
+        transform: scale(0);
+        opacity: 0;
+        width: 20vw;
+        height: 30vw;
+        top: 26vw;
+        left: 26vw;
+    }
+}
+
+.share {
+    animation-name: share_kf;
+    animation-duration: 0.5s;
+    animation-fill-mode: both;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+}
+
+@keyframes share_kf {
+    0% {
+        opacity: 1;
+        width: 21.3vw;
+        height: 30vw;
+        top: 4.1vw;
+        left: 16.5vw;
+    }
+
+    100% {
+        opacity: 0;
+        width: 21.3vw;
+        height: 30vw;
+        top: 0vw;
+        left: 16.5vw;
+    }
+}
+
+
+
+.hide {
+    display: none;
+}
+
+.z_index {
+    z-index: 100;
+}
