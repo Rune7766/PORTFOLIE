@@ -264,14 +264,10 @@ img {
 }
 
 .text {
-    flex-basis: 500px;
-    background-color: #f2f2f2;
-    box-shadow: 5px 5px #888888;
-    text-align: justify;
-    padding: 20px;
+    flex-basis: 700px;
     margin: auto;
-    margin-top: 100px;
-    border-radius: 10px;
+    color: white;
+    padding-bottom: 200px;
 }
 
 
@@ -355,6 +351,8 @@ img {
     font-size: 20px;
 }
 
+}
+
 .matriale {
     margin: 20px;
     justify-content: center;
@@ -365,19 +363,29 @@ img {
     position: relative;
     text-align: center;
     border: 2px solid #ffa500;
-    margin-top: 20px;
+    margin: 20px;
 }
 
 video {
     border: 2px solid #ffa500;
     margin: 20px;
+    max-width: 100%;
+    width: auto;
 }
 
 .video {
     display: flex;
     position: relative;
     justify-content: center;
+}
 
+@media only screen and (max-width: 700px) {
+    video {
+        border: none;
+        margin: 20px;
+        max-width: 100%;
+        width: auto;
+    }
 }
 
 /*fOOTER*/
