@@ -1,0 +1,410 @@
+body {
+    background-color: white;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0px;
+
+    box-sizing: border-box;
+}
+
+
+
+h1 {
+    font-size: 3rem;
+    color: #3c3f52;
+    text-transform: uppercase;
+    font-family: 'Allerta Stencil', sans-serif;
+}
+
+h2 {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 2rem;
+    color: #585d67;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.5rem;
+    color: #585d67;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+h4 {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 1rem;
+    color: #585d67;
+    text-transform: uppercase;
+}
+
+
+h5 {
+    font-family: 'Noto Sans', sans-serif;
+    color: #585d67;
+    font-size: 1rem;
+    text-transform: uppercase;
+
+}
+
+
+h6:hover {
+    color: #495315;
+}
+
+h6 {
+    font-family: 'Noto Sans', sans-serif;
+    color: #585d67;
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+h7:hover {
+    color: #495315;
+}
+
+h7 {
+    font-family: 'Noto Sans', sans-serif;
+    color: #585d67;
+    font-size: 0.8rem;
+}
+
+h8 {
+    font-family: 'Noto Sans', sans-serif;
+    color: #585d67;
+    font-size: 1rem;
+}
+
+img {
+    width: 100%;
+}
+
+#splash {
+    background-image: url(splash1.jpg);
+    width: 100wv;
+    height: 100vh;
+    background-size: cover;
+    background-position: 75% 0%;
+    0%;
+    flex-basis: 700px;
+    flex-wrap: nowrap;
+    margin: 0 5px;
+    max-height: 800px;
+}
+
+@media only screen and (min-width: 400px) {
+
+    #splash {
+        background-position: 52%;
+        0%;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+
+    #splash {
+        background-position: 52%;
+        0%;
+    }
+}
+
+@media only screen and (min-width: 700px) {
+
+    #splash {
+        background-position: 40%;
+        0%;
+    }
+}
+
+#menu .continer_menu {
+    font-family: 'Allerta Stencil', sans-serif;
+    font-size: 1.5rem;
+    color: #495315;
+    padding: 10px 10px 10px 10px;
+    text-align: center;
+    background-color: #f2f2f2;
+}
+
+menu {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    width: 98vw;
+    max-width: none;
+    margin-bottom: 10px;
+}
+
+menu_1 {
+    flex-grow: 1;
+    background-color: rgba(255, 254, 249, 0.7);
+    padding: 0px 5px 0px 5px;
+    margin: 2px 5px;
+    text-align: center;
+    line-height: 2.5rem;
+    border-left: 0px;
+    border-right: 1px #999a93 solid;
+    border-top: 2px #999a93 solid;
+    border-bottom: 0;
+}
+
+#om .sectionwrapper {
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: row;
+
+
+}
+
+#om .col {
+    flex-basis: 300px;
+    flex-grow: 1;
+    background-color: #eaebeb;
+    padding: 10px 10px 10px 10px;
+}
+
+
+img {
+    width: 100%
+}
+
+
+
+#eksempler .sectionwrapper {
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: row;
+
+
+}
+
+#eksempler .top {
+    flex-basis: 300px;
+    flex-grow: 1;
+}
+
+#eksempler .bottom {
+    flex-basis: 300px;
+}
+
+#eksempler .col {
+    flex-grow: 1;
+    flex-basis: 300px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    background-color: #eaebeb;
+    margin: 5px;
+    padding: 10px 10px 10px 10px;
+}
+
+#typografi .sectionwrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: #eaebeb;
+    padding: 10px 10px 10px 10px;
+
+}
+
+#typografi .col_wide {
+
+    flex-grow: 1;
+    flex-basis: 100px;
+}
+
+
+#typografi .col_narrow {
+    flex-grow: 1;
+    flex-basis: 300px;
+}
+
+
+#typografi .txt {
+    flex-basis: 300px;
+    flex-grow: 1;
+
+}
+
+#typografi .image {
+    flex-basis: 300px;
+    flex-grow: 1;
+}
+
+#typografi .top {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+}
+
+#typografi .bottom {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+
+}
+
+#komposition_farver .sectionwrapper {
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    background-color: #eaebeb;
+    padding: 10px 10px 10px 10px;
+
+}
+
+
+#komposition_farver .col_wide {
+    display: flex;
+    flex-direction: row;
+    flex-basis: 300px;
+    flex-grow: 2;
+    flex-wrap: nowrap;
+
+}
+
+#komposition_farver .colors {
+    flex-basis: 200px;
+
+}
+
+#komposition_farver .content {
+    flex-grow: 2;
+    flex-basis: 200px;
+}
+
+#komposition_farver .col_narrow {
+    flex-basis: 300px;
+    flex-grow: 1;
+}
+
+#links .sectionwrapper {
+    display: flex;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    background-color: #eaebeb;
+
+}
+
+#links .content {
+    flex-basis: 200px;
+    padding: 10px 10px 10px 10px;
+
+}
+
+#Inspation .sectionwrapper {
+    display: flex;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    background-color: #eaebeb;
+    padding: 10px 10px 10px 10px;
+}
+
+#Inspation .content {
+    flex-basis: 200px;
+}
+
+#styletile {
+    background-color: #ddd9d9;
+
+}
+
+#styletile .col {
+    flex-basis: 500px;
+    flex-grow: 1;
+}
+
+#styletile .col2 {
+    flex-basis: 500px;
+    flex-grow: 1;
+}
+
+
+
+p {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 1rem;
+}
+
+#komposition_farver .content {
+    flex-basis: 200px;
+    flex-grow: 2;
+    margin: 0 20px 0 0px;
+}
+
+#komposition_farver .col_narrow {
+    flex-grow: 1;
+    flex-basis: 200px;
+    margin: 0 10px 20px 5px;
+    margin: 15px 5px;
+}
+
+.color {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: space-around;
+
+}
+
+.color1 {
+    background-color: #495315;
+    border: 1px solid black;
+
+}
+
+.color2 {
+    background-color: #585d67;
+    border: 1px solid black;
+}
+
+color3 {
+    background-color: #ddd9d9;
+    border: 1px solid black;
+}
+
+.color4 {
+    background-color: #3c3f52;
+    border: 1px solid black;
+}
+
+.color5 {
+    background-color: #888584;
+    border: 1px solid black;
+}
+
+.colorbox {
+    width: 100px;
+    height: 100px;
+}
+
+#styletile .icon {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+
+#styletile .sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+a {
+    color: #585d67;
+}
+
+a:hover {
+    color: #495315;
+}
+
+img {
+    100%;
+
+}
+
+.footer {
+    background-color: #eaebeb;
+    text-align: center;
+    padding: 30px;
+    color: #495315;
